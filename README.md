@@ -45,7 +45,7 @@ The episode terminates when the agent reaches the goal state (G) or falls into a
   - The algorithm is guaranteed to converge to the optimal value function, and in the process of doing so, also converges to the optimal policy.
 </br>
 The algorithm is as follows:</br>
-1. Initialize the value function V(s) arbitrarily for all states s.
+1. Initialize the value function V(s) arbitrarily for all states s.</br>
 2. Repeat until convergence:
    - Initialize aaction-value function Q(s, a) arbitrarily for all states s and actions a.
    - For all the states s and all the action a of every state:
@@ -53,10 +53,10 @@ The algorithm is as follows:</br>
      - Take the value function V(s) to be the maximum of Q(s, a) over all actions a.
      - Check if the maximum difference between Old V and new V is less than theta.
      - Where theta is a small positive number that determines the accuracy of estimation.
-3. If the maximum difference between Old V and new V is greater than theta, then 
+3. If the maximum difference between Old V and new V is greater than theta, then </br>
     - Update the value function V with the maximum action-value from Q.
-    - Go to step 2.
-4. The optimal policy can be constructed by taking the argmax of the action-value function Q(s, a) over all actions a.
+    - Go to step 2.</br>
+4. The optimal policy can be constructed by taking the argmax of the action-value function Q(s, a) over all actions a.</br>
 5. Return the optimal policy and the optimal value function.
 ## VALUE ITERATION FUNCTION
 ```py
